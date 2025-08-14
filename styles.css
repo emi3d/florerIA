@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Parallax background */
 #parallax-bg {
     position: fixed;
     top: 0;
@@ -18,7 +17,7 @@ body {
 
 /* Glassmorphism effect */
 .glass-panel {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px); /* The magic behind the glass effect */
     border: 1px solid rgba(255, 255, 255, 0.2);
 }

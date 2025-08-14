@@ -8,33 +8,32 @@ const productsContainer = document.getElementById('products-container');
 const productTemplate = document.getElementById('product-template');
 const parallaxBg = document.getElementById('parallax-bg');
 
-// Load products when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // We call loadProducts first to ensure the products are in the DOM before we observe them
+    
     loadProducts().then(() => {
-        // Once products are loaded, we can set up the reveal animation
+        
         setupIntersectionObserver();
     });
 });
 
-// Parallax effect on scroll
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     parallaxBg.style.transform = `translateY(${scrollPosition * 0.2}px)`;
 });
 
-// Dynamic font weight animation
+
 const dynamicTexts = document.querySelectorAll('.dynamic-text');
 window.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX / window.innerWidth;
-    const fontVariation = 400 + (mouseX * 500); // Varies font weight from 400 to 900
+    const fontVariation = 400 + (mouseX * 500); 
     
     dynamicTexts.forEach(textElement => {
         textElement.style.fontVariationSettings = `'wght' ${fontVariation}`;
     });
 });
 
-// Intersection Observer for reveal animations
+
 function setupIntersectionObserver() {
     const observerOptions = {
         root: null,
@@ -87,8 +86,7 @@ async function loadProducts() {
             
             const whatsappBtn = productCard.querySelector('a');
             const whatsappText = `Hola, me interesa el bouquet "${product.name}".`;
-            whatsappBtn.href = `https://wa.me/?text=${encodeURIComponent(whatsappText)}`;
-            
+            whatsappBtn.href = `https://wa.me/527222402775?text=${encodeURIComponent(whatsappText)}`;
             productsContainer.appendChild(productCard);
         });
         
@@ -126,7 +124,7 @@ async function generateBouquet() {
                 bouquetImage.classList.remove('hidden');
                 displayMessage('¡Aquí tienes tu bouquet personalizado! Haz clic en la imagen para solicitarlo por WhatsApp.');
                 bouquetImage.onclick = () => {
-                    const whatsappText = `¡Hola! Me gustaría pedir el bouquet que he generado con IA. La descripción fue: "${userPrompt}".`;
+                    const whatsappText = `¡Hola! Me gustaría pedir este bouquet personalizado. La descripción fue: "${userPrompt}".`;
                     window.open(`https://wa.me/?text=${encodeURIComponent(whatsappText)}`, '_blank');
                 };
             } else {
@@ -169,7 +167,7 @@ async function fetchStock() {
         return await response.text();
     } catch (e) {
         console.error("Could not fetch stock file.", e);
-        displayMessage("Could not load store inventory. Make sure 'stock.txt' is in the same directory and you are running a local server.");
+        displayMessage("Ha ocurrido un error interno");
         return "roses, tulips, lilies, baby's breath, eucalyptus, assorted chocolates, colorful ribbons";
     }
 }
@@ -179,7 +177,7 @@ async function enhancePrompt(apiKey, userPrompt, stock) {
 
     const fullPrompt = `
         Based on the user's request and the available stock, create a detailed, visually rich prompt for an image generation AI.
-        The final image should be a beautiful, realistic photo of a flower bouquet.
+        The final image should be a beautiful, realistic photo of a flower bouquet. (User speaks spanish but create the prompt in english)
 
         User Request: "${userPrompt}"
 
