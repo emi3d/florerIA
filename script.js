@@ -79,7 +79,7 @@ async function loadProducts() {
             
             const priceSpan = productCard.querySelector('span');
             if (product.price) {
-                priceSpan.textContent = `$${product.price.toFixed(2)}`;
+                priceSpan.textContent = `$${product.price.toFixed(2)} mxn`;
             } else {
                 priceSpan.textContent = 'Precio personalizado';
             }

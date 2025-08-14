@@ -3,21 +3,21 @@
     "id": 1,
     "name": "Bouquet Clásico de Rosas",
     "description": "Un atemporal bouquet de rosas rojas, ideal para cualquier ocasión especial.",
-    "price": 45.00,
+    "price": 249.00,
     "image": "images/clasicasrojas.jpg"
   },
   {
     "id": 2,
     "name": "Amor de cine",
     "description": "Un arreglo elegante y sútil, elegante para un detalle con clase.",
-    "price": 35.50,
+    "price": 449.00,
     "image": "images/bouquetNegro.jpg"
   },
   {
     "id": 3,
     "name": "Te amo",
     "description": "Para la mujer sofisticada.",
-    "price": 55.00,
+    "price": 349.00,
     "image": "images/rosas.jpg"
   },
   {
