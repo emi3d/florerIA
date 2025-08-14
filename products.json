@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Bouquet Clásico de Rosas",
+    "description": "Un atemporal bouquet de rosas rojas, ideal para cualquier ocasión especial.",
+    "price": 45.00,
+    "image": "images/bouquet_rosas.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Arreglo Girasoles Veraniego",
+    "description": "Un arreglo vibrante y alegre con girasoles frescos y follaje de temporada.",
+    "price": 35.50,
+    "image": "images/arreglo_girasoles.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bouquet de Lirios Elegante",
+    "description": "Lirios blancos, ramas de eucalipto y un toque de paniculata para un look sofisticado.",
+    "price": 55.00,
+    "image": "images/bouquet_lirios.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Crea tu Propio Bouquet",
+    "description": "Utiliza nuestro generador IA para crear un bouquet totalmente personalizado a partir de tu imaginación.",
+    "price": null,
+    "image": "images/custom_bouquet.jpg"
+  }
+]

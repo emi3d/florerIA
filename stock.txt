@@ -1,0 +1,15 @@
+# Available Flowers
+- Roses (Red, White, Pink)
+- Tulips (Yellow, Purple)
+
+
+# Available Decorations
+- Eucalyptus leaves
+- Ferns
+- Simple brown wrapping paper
+- Clear cellophane wrap
+- Silk ribbons (Red, Blue, White, Pink)
+
+# Available Candies
+- chocolates ferrero
+- Small box gummies
